@@ -122,8 +122,33 @@ nav button img{
     margin-top: 0.5vw;
 
 }
+#moving-div {
+  width: 36%;          /* set container size */
+  height: 10vh;         /* optional */
+  display: flex;         /* put images in a row */
+  justify-content: space-evenly; /* even spacing */
+  align-items: center;   /* vertically center */
+  overflow: hidden;      /* prevents overflow */
+  margin-top: 18vh;
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+}
+#moving-div img {
+  max-width:100px;   /* each image shrinks, adjust size */
+  height: 7vh;       /* keeps aspect ratio */
+padding-left: 20px;
+}
+
 #page2{
   height: 100vh;
   width: 100%;
   background-color: #111;
+ 
+}
+.page2-left{
+    height: 100%;
+    width: 50%;
+    background-color: #333;
+    z-index: auto;
 }
